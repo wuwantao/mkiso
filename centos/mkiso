@@ -1,0 +1,5 @@
+mkisofs -R -J -T -v --no-emul-boot --boot-load-size 4 \
+ --boot-info-table -V "CentOS 6.5 x86_64 AUTO Install" \
+ -b isolinux/isolinux.bin -c isolinux/boot.cat \
+ -o ./centos6.4_auto_install.iso \
+ ./auto_install
